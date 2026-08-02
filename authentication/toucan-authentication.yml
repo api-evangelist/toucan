@@ -1,0 +1,31 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.toucan.earth/developers/subgraph
+docs: https://docs.toucan.earth/developers/sdk/quickstart
+summary:
+  types: [apiKey, web3-wallet]
+  notes: >-
+    Toucan has no proprietary REST auth. Its two developer surfaces authenticate
+    differently: (1) the Toucan Subgraphs are served through The Graph's gateway
+    and require a Graph API key in the request path, generated at
+    https://thegraph.com/studio/apikeys/ after creating an account; (2) smart
+    contract interactions (directly or via the toucan-sdk ToucanClient) are
+    authorized by an EVM wallet signer (e.g. ethers.js Signer) — a provider alone
+    gives read-only access, a signer enables writes.
+schemes:
+  - name: graphApiKey
+    type: apiKey
+    in: path
+    description: >-
+      The Graph gateway API key embedded in the subgraph endpoint URL:
+      https://gateway-arbitrum.network.thegraph.com/api/[api-key]/subgraphs/id/<subgraph-id>
+    docs: https://thegraph.com/studio/apikeys/
+    surfaces: [subgraphs]
+  - name: walletSigner
+    type: web3-wallet
+    description: >-
+      EVM wallet signer/provider (ethers.js ^5.6.4 recommended; wagmi <1.0
+      supported) used by the toucan-sdk ToucanClient for contract reads and
+      writes on Celo, Polygon, and Base networks.
+    docs: https://docs.toucan.earth/developers/sdk/quickstart
+    surfaces: [smart-contracts, sdk]

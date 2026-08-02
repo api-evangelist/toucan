@@ -1,0 +1,66 @@
+# Toucan Documentation
+
+## Toucan Docs
+
+- [Welcome to Toucan](https://docs.toucan.earth/introduction/readme.md): Infrastructure to accelerate global climate action.
+- [Legal Disclaimer](https://docs.toucan.earth/introduction/legal-disclaimer.md): This is experimental software. Use at your own risk.
+- [Bridging](https://docs.toucan.earth/toucan/carbon-bridge.md): An introduction to the tokenization of carbon credits.
+- [Puro Carbon Bridge](https://docs.toucan.earth/toucan/carbon-bridge/puro-carbon-bridge.md)
+- [Tokenization](https://docs.toucan.earth/toucan/carbon-bridge/puro-carbon-bridge/tokenization.md): How to tokenize CORCs from the Puro Registry into TCO2s.
+- [Detokenization](https://docs.toucan.earth/toucan/carbon-bridge/puro-carbon-bridge/detokenization.md): How to detokenize TCO2s into CORCs in the Puro Registry.
+- [Carbon Pools](https://docs.toucan.earth/toucan/carbon-pools.md): Carbon pools bundle carbon credits that share similar attributes to create more liquid and efficient markets.
+- [How a Carbon Pool Works](https://docs.toucan.earth/toucan/carbon-pools/how-a-carbon-pool-works.md)
+- [Benefits of Pools](https://docs.toucan.earth/toucan/carbon-pools/benefits-of-pools.md)
+- [CHAR Carbon Pool](https://docs.toucan.earth/toucan/carbon-pools/char-carbon-pool.md)
+- [How to Buy CHAR](https://docs.toucan.earth/toucan/carbon-pools/how-to-buy-char.md): The world's first liquid market for biochar.
+- [Deposits and Redemptions](https://docs.toucan.earth/toucan/carbon-pools/deposits-and-redemptions.md)
+- [Carbon Retirements](https://docs.toucan.earth/toucan/retire-credits.md)
+- [Web3 concepts](https://docs.toucan.earth/resources/interacting-with-smart-contracts.md)
+- [Carbon markets](https://docs.toucan.earth/resources/carbon-markets.md)
+- [Carbon credits](https://docs.toucan.earth/resources/carbon-markets/credits.md)
+- [Frequently asked questions](https://docs.toucan.earth/resources/frequently-asked-questions.md): This can be a bit confusing. We're here to help.
+- [How do I use the Carbon Bridge?](https://docs.toucan.earth/resources/frequently-asked-questions/how-do-i-use-the-carbon-bridge.md)
+- [How can one carbon pool token, like CHAR, represent one tonne of carbon?](https://docs.toucan.earth/resources/frequently-asked-questions/how-can-one-pool-token-represent-one-tonne-of-carbon-and-how-does-the-bridge-work.md)
+- [Can I retire carbon pool tokens, like CHAR, to offset my emissions?](https://docs.toucan.earth/resources/frequently-asked-questions/how-can-i-retire-pool-tokens-to-offset-my-emissions.md)
+- [Where can I find the addresses of CHAR or other contracts?](https://docs.toucan.earth/resources/frequently-asked-questions/where-can-i-find-the-addresses-of-toucan-contracts.md)
+- [How long does it take to bridge carbon credits?](https://docs.toucan.earth/resources/frequently-asked-questions/how-long-does-it-take-to-bridge-carbon-credits-and-how-does-the-validation-work.md)
+- [What happens to a pool token if it is bridged to another network?](https://docs.toucan.earth/resources/frequently-asked-questions/how-does-toucan-avoid-double-counting-of-credits-on-cross-chain.md)
+- [FAQ for transition to Open Source](https://docs.toucan.earth/resources/frequently-asked-questions/faq-for-transition-to-open-source.md)
+- [Archives](https://docs.toucan.earth/resources/archives.md)
+- [Verra Bridge \[Deprecated\]](https://docs.toucan.earth/resources/archives/verra-bridge-deprecated.md): Below is the historical archive of documentation regarding the deprecated Carbon Bridge to Verra
+- [Pool Acceptance Criteria: NCT, BCT](https://docs.toucan.earth/resources/archives/pool-acceptance-criteria.md)
+- [NCT Pool Report](https://docs.toucan.earth/resources/archives/nct-pool-party-report.md): A report detailing the Nature Carbon Tonne criteria design process
+- [Audits](https://docs.toucan.earth/resources/security.md)
+- [Toucan for developers](https://docs.toucan.earth/developers/toucan-developer-resources.md)
+- [Smart contracts](https://docs.toucan.earth/developers/smart-contracts.md)
+- [Carbon pool contracts](https://docs.toucan.earth/developers/smart-contracts/pool-contracts.md): All carbon pools have the same standard functions
+- [TCO2 contracts](https://docs.toucan.earth/developers/smart-contracts/tco2.md): TCO2 tokens represents tokenized carbon credits
+- [Retirement certificates](https://docs.toucan.earth/developers/smart-contracts/retirement-certificates.md)
+- [OffsetHelper](https://docs.toucan.earth/developers/smart-contracts/offset-helper.md): The OffsetHelper contract simplifies the carbon offsetting (retirement) process.
+- [Subgraphs](https://docs.toucan.earth/developers/subgraph.md)
+- [Toucan SDK](https://docs.toucan.earth/developers/sdk.md)
+- [Quickstart](https://docs.toucan.earth/developers/sdk/quickstart.md): Quickstart a project with carbon retirements with a few lines of code
+- [Contract interactions](https://docs.toucan.earth/developers/sdk/contract-interactions.md): Interact with Toucan smart contracts using our JavaScript SDK
+- [Subgraph interactions](https://docs.toucan.earth/developers/sdk/subgraph-interactions.md): SDK functions to read from the Toucan subgraph
+- [Tools + examples](https://docs.toucan.earth/developers/tools-+-examples.md)
+- [Integration examples](https://docs.toucan.earth/developers/tools-+-examples/integration-examples.md): If you're looking for examples of how to build on top of our protocol, you can find them here.
+- [Testnet faucets](https://docs.toucan.earth/developers/tools-+-examples/faucet.md): Get carbon pool and TCO2 tokens testnets
+- [Dune dashboard](https://docs.toucan.earth/developers/tools-+-examples/dune-dashboard.md)
+- [Developer support](https://docs.toucan.earth/developers/support.md): Toucan support
+- [Error codes](https://docs.toucan.earth/developers/support/error-codes.md)
+
+
+---
+
+# Agent Instructions
+This documentation is published with GitBook. GitBook is the documentation platform designed so that both humans and AI agents can read, navigate, and reason over technical content effectively. Learn more at gitbook.com.
+
+## Querying This Documentation
+If you need additional information, you can query the documentation dynamically by asking a question.
+Perform an HTTP GET request on a page URL with the `ask` query parameter:
+```
+GET https://docs.toucan.earth/introduction/readme.md?ask=<question>
+```
+The question should be specific, self-contained, and written in natural language.
+The response will contain a direct answer to the question and relevant excerpts and sources from the documentation.
+Use this mechanism when the answer is not explicitly present in the current page, you need clarification or additional context, or you want to retrieve related documentation sections.

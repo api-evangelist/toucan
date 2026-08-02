@@ -1,0 +1,130 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.toucan.earth/developers/support/error-codes
+format: contract-error-codes
+description: >-
+  Toucan uses custom numeric error codes (not Solidity custom errors) in its pool
+  contracts to keep contract size small. Codes are returned by carbon pool and
+  Cross-Chain Bridge (COB) contract operations.
+envelope: numeric error code emitted by pool / COB smart contracts
+error_codes:
+  - code: 1
+    description: User is not authorized
+  - code: 2
+    description: Empty array provided as input
+  - code: 3
+    description: Pool is full of TCO2s
+  - code: 4
+    description: ERC20 is blacklisted in the pool (e.g. blacklisted TCO2s like the HFC-23 project)
+  - code: 5
+    description: ERC20 is not whitelisted in the pool (non-TCO2 ERC20s must be manually whitelisted)
+  - code: 6
+    description: Vintage start time of a TCO2 is too old
+  - code: 7
+    description: Region is not accepted in the pool
+  - code: 8
+    description: Standard is not accepted in the pool
+  - code: 9
+    description: Methodology is not accepted in the pool
+  - code: 10
+    description: Provided fee is invalid, not in a basis points format [0,10000)
+  - code: 11
+    description: Provided address needs to be non-zero
+  - code: 12
+    description: Validation check to ensure array lengths match
+  - code: 13
+    description: TCO2 not exempted from redeem fees
+  - code: 14
+    description: The pool is paused
+  - code: 15
+    description: Redemption transaction has leftover unredeemed value; all value must be redeemed
+  - code: 16
+    description: Redemption exceeds deposited TCO2 supply
+  - code: 17
+    description: User must be a router
+  - code: 18
+    description: User must be the pool owner
+  - code: 19
+    description: Zero destination address is invalid for pool token transfers
+  - code: 20
+    description: Self destination address is invalid for pool token transfers
+  - code: 21
+    description: Zero amount provided as an input (e.g. in redemptions) is invalid
+  - code: 22
+    description: ERC20 is not eligible to be pooled
+  - code: 23
+    description: Carbon registry is already supported in COB
+  - code: 24
+    description: The caller is not granted the VERIFIER_ROLE in COB
+  - code: 25
+    description: The caller does not own the provided batch
+  - code: 26
+    description: The caller is not a valid batch owner (not a TCO2 contract or verifier)
+  - code: 27
+    description: The batch is not in Confirmed status
+  - code: 28
+    description: The batch is not in a requested status (DetokenizationRequested or RetirementRequested)
+  - code: 29
+    description: The batch does not exist
+  - code: 30
+    description: The batch has an invalid status based on the action requested
+  - code: 31
+    description: The batch is missing an associated project vintage
+  - code: 32
+    description: The serial number in the batch is already approved
+  - code: 33
+    description: The batch is not in Pending status
+  - code: 34
+    description: The batch is already fractionalized
+  - code: 35
+    description: The batch is not in Rejected status
+  - code: 36
+    description: The project vintage is already set in the batch
+  - code: 37
+    description: The transfer is not approved
+  - code: 38
+    description: The COB contract is paused
+  - code: 39
+    description: The caller is invalid
+  - code: 40
+    description: The TCO2 for the batch is not found
+  - code: 41
+    description: The registry for the provided vintage is not supported
+  - code: 42
+    description: No TCO2 was minted as part of tokenization
+  - code: 43
+    description: Only mints are supported for the batch contract to receive an NFT
+  - code: 44
+    description: New batch status is invalid
+  - code: 45
+    description: The TCO2 batch amount has a mismatch
+  - code: 46
+    description: The TCO2 batch amount approval has failed
+  - code: 47
+    description: The TCO2 batch not confirmed
+  - code: 48
+    description: The TCO2 batch not whitelisted
+  - code: 49
+    description: The TCO2 is non matching NFT
+  - code: 50
+    description: The TCO2 quantity in batch is higher than total vintages
+  - code: 51
+    description: The fee to be charged is too high
+  - code: 52
+    description: The max fee to be paid is invalid
+  - code: 53
+    description: The pool feature is not supported
+  - code: 54
+    description: The TCO2 decimals provided to retirement or detokenization requests are invalid
+  - code: 55
+    description: The TCO2 quantity in the batch is invalid
+  - code: 56
+    description: Splitting is required on detokenization/retirement finalization, but 2 new serial numbers were not provided
+  - code: 57
+    description: The score set for the ERC-1155 token in the pool is invalid
+  - code: 58
+    description: The score of the ERC-1155 token in the pool is not set
+  - code: 59
+    description: The underlying decimals are too high for the pool
+  - code: 60
+    description: The provided supply cap is invalid and should match the underlying token decimals (e.g. for an ERC-1155 token whose smallest denomination is tonnes, the pool supply cap should not include decimals of lower fidelity than tonnes)

@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.toucan.earth/resources/archives
+versioning:
+  scheme: contract-upgrades
+  notes: >-
+    Toucan is smart-contract infrastructure; changes ship as audited contract
+    upgrades rather than versioned REST APIs. Minor contract upgrades are
+    reviewed pre-upgrade by the same security firms that audited the protocol.
+  docs: https://docs.toucan.earth/resources/security
+deprecation:
+  policy_url: null
+  notes: >-
+    Deprecations are documented in the docs Archives section with historical
+    documentation retained. The Verra Carbon Bridge is deprecated with its
+    documentation archived; the NCT/BCT pool acceptance criteria are archived.
+  deprecated_surfaces:
+    - name: Verra Carbon Bridge
+      status: deprecated
+      docs: https://docs.toucan.earth/resources/archives/verra-bridge-deprecated
+sla: null
+status_page: null
+open_source_transition:
+  notes: Toucan documents a transition to open source for protocol components.
+  docs: https://docs.toucan.earth/resources/frequently-asked-questions/faq-for-transition-to-open-source

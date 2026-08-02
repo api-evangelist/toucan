@@ -1,0 +1,42 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.toucan.earth/developers/tools-+-examples/faucet
+description: >-
+  Toucan's test surface is testnet-based (web3 shape): developers get carbon test
+  tokens (pool tokens and TCO2s) from faucets on Base Sepolia and Celo Alfajores,
+  or use local chain forks. Toucan recommends local forks for testing environments.
+test_vs_live:
+  model: separate testnet deployments (Base Sepolia, Celo Alfajores, Polygon Amoy) vs mainnet (Base, Celo, Polygon)
+  recommendation: use local forks in your testing environment when developing on Toucan
+faucets:
+  - name: Toucan Faucet (Celo Alfajores)
+    url: https://faucet.toucan.earth/
+    network: celo-alfajores
+    tokens: [NCT, BCT, TCO2]
+    notes: Requires Alfajores testnet CELO for gas (Celo faucet or AllThatNode faucet).
+  - name: Base Sepolia faucet contract (via BaseScan Write Contract)
+    url: https://sepolia.basescan.org/address/0xf2a25a2b3c9652a3eb32f7fe18cbf58e664fd054#writeContract
+    network: base-sepolia
+    contract: '0xf2a25a2b3c9652a3eb32f7fe18cbf58e664fd054'
+    tokens: [CHAR, TCO2]
+    notes: Connect wallet, call Withdraw with the asset contract address and amount 1.
+test_assets:
+  - name: CHAR (Base Sepolia)
+    address: '0xf92f74Dd03f9A9E04773cE5fF3BCeaBB2eB1dDf0'
+    url: https://sepolia.basescan.org/address/0xf92f74dd03f9a9e04773ce5ff3bceabb2eb1ddf0
+  - name: TCO2 PUR-229 (Base Sepolia)
+    address: '0xd0844B61Dcd657EE937D3CD8cF0a4b83a87218cD'
+    url: https://sepolia.basescan.org/address/0xd0844B61Dcd657EE937D3CD8cF0a4b83a87218cD
+  - name: TCO2 PUR-21 (Base Sepolia)
+    address: '0xe682370Cf0F1d62d672eda1C1D0220605602074c'
+    url: https://sepolia.basescan.org/address/0xe682370cf0f1d62d672eda1c1d0220605602074c
+  - name: TCO2 PUR-52 (Base Sepolia)
+    address: '0xF0476e6969fab717f7FCbA931b398e5D498D0f08'
+    url: https://sepolia.basescan.org/address/0xf0476e6969fab717f7fcba931b398e5d498d0f08
+testnet_subgraphs:
+  - network: base-sepolia
+    subgraph_id: 2oKCq3rDwdYPSao4UbDZKSNbawEdhBVf3BxmqJzFe1uj
+  - network: polygon-amoy
+    subgraph_id: FKzFZuYHxyHiiDmdW9Qvwtet1Ad1ERsvjWMhhqd9V8pk
+  - network: celo-alfajores
+    subgraph_id: 4uY2L3vQW8XKYPrFFk4i6ZuJkgbpJ8SbJayc8wzMBRYw

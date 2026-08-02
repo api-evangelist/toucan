@@ -1,0 +1,37 @@
+generated: '2026-07-21'
+method: derived
+source: https://docs.toucan.earth/developers/smart-contracts
+standards:
+  - id: erc-20
+    conforms: true
+    evidence: >-
+      TCO2 tokens and carbon pool tokens (CHAR, NCT, BCT) are ERC-20 tokens with
+      18 decimals; pool error codes reference ERC20 whitelisting/blacklisting
+      (docs.toucan.earth/developers/smart-contracts, error codes 4/5/22).
+  - id: erc-721
+    conforms: true
+    evidence: >-
+      Retirement certificates are NFTs minted on retirement; batch NFTs are
+      received by the batch contract (docs.toucan.earth/developers/smart-contracts/retirement-certificates,
+      error code 43).
+  - id: erc-1155
+    conforms: true
+    evidence: >-
+      Pool error codes 57-60 describe ERC-1155 tokens scored and pooled
+      (docs.toucan.earth/developers/support/error-codes).
+  - id: graphql
+    conforms: true
+    evidence: >-
+      Toucan Subgraphs expose GraphQL query endpoints via The Graph gateway on
+      six networks (docs.toucan.earth/developers/subgraph).
+  - id: thegraph-subgraph
+    conforms: true
+    evidence: >-
+      Data surface is published as The Graph subgraphs with Studio API keys and
+      explorer playgrounds (docs.toucan.earth/developers/subgraph).
+  - id: oauth2
+    conforms: false
+    evidence: No OAuth2 surface documented; auth is Graph API key + EVM wallet signer.
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: Errors are numeric smart-contract error codes, not HTTP problem details.

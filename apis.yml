@@ -1,8 +1,14 @@
 aid: toucan
 name: Toucan
-description: 'Toucan is a company surfaced as a portfolio company of obvious-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: planetary-health. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Toucan builds digital infrastructure for carbon credit markets, providing the
+  rails for buying, selling, and retiring carbon credits on-chain. Its Carbon
+  Bridge tokenizes credits from registries like Puro Earth into TCO2 tokens,
+  carbon pools such as CHAR (biochar) bundle credits into liquid reference
+  tokens, and retirement certificates prove offsets on-chain. Developers build
+  on Toucan through audited smart contracts on Base, Celo, and Polygon, the
+  toucan-sdk JavaScript/TypeScript SDK, and GraphQL subgraphs served through The
+  Graph on six networks.
 url: https://raw.githubusercontent.com/api-evangelist/toucan/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,18 +16,102 @@ x-backed-by:
 - obvious-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://toucan.earth/wp-content/uploads/2024/05/transparent.png
 tags:
 - Company
 - Planetary Health
-apis: []
+- Carbon Credits
+- Climate
+- Web3
+- Carbon Markets
+- Tokenization
+- GraphQL
+- Biochar
+apis:
+- name: Toucan Subgraph API
+  description: >-
+    GraphQL subgraphs providing endpoints for querying Toucan infrastructure and
+    ecosystem data (projects, TCO2s, pools, retirements) on Base, Base Sepolia,
+    Polygon, Amoy, Celo, and Celo Alfajores, served through The Graph gateway
+    with a Graph Studio API key.
+  humanURL: https://docs.toucan.earth/developers/subgraph
+  baseURL: https://gateway-arbitrum.network.thegraph.com
+  tags:
+  - GraphQL
+  - Subgraph
+  - Carbon Credits
+  properties:
+  - type: Documentation
+    url: https://docs.toucan.earth/developers/subgraph
+  - type: Playground
+    url: https://thegraph.com/explorer/subgraphs/AEJ5PEDye6Z198HRQBioG6mZ6ZacHenBg2HTopZPsUCi?view=Query&chain=arbitrum-one
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/toucan-domain-security.yml
 - type: Website
   url: https://toucan.earth
+- type: Blog
+  url: https://blog.toucan.earth
+- type: Documentation
+  url: https://docs.toucan.earth/
+- type: DeveloperPortal
+  url: https://docs.toucan.earth/developers/toucan-developer-resources
+- type: APIReference
+  url: https://docs.toucan.earth/developers/subgraph
+- type: GettingStarted
+  url: https://docs.toucan.earth/developers/sdk/quickstart
+- type: Support
+  url: https://docs.toucan.earth/developers/support
+- type: GitHubOrganization
+  url: https://github.com/ToucanProtocol
+- type: TermsOfService
+  url: https://toucan.earth/terms-of-service/
+- type: PrivacyPolicy
+  url: https://toucan.earth/privacy-policy/
+- type: Login
+  url: https://app.toucan.earth/
+- type: Packages
+  url: packages/toucan-packages.yml
+- type: SDKs
+  url: packages/toucan-packages.yml
+- type: LLMsTxt
+  url: llms/toucan-llms.txt
+- type: ErrorCatalog
+  url: errors/toucan-error-codes.yml
+- type: Sandbox
+  url: sandbox/toucan-sandbox.yml
+- type: Lifecycle
+  url: lifecycle/toucan-lifecycle.yml
+- type: Deprecation
+  url: https://docs.toucan.earth/resources/archives/verra-bridge-deprecated
+- type: Authentication
+  url: authentication/toucan-authentication.yml
+- type: Conformance
+  url: conformance/toucan-conformance.yml
+- type: ChangeLog
+  url: changelog/toucan-changelog.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 10
+  pass: local-v1

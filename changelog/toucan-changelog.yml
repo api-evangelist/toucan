@@ -1,0 +1,28 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/ToucanProtocol/toucan-sdk/releases
+description: >-
+  Toucan publishes no dated API changelog; the developer-facing change surface is
+  the GitHub releases of the toucan-sdk (and the delayed contracts mirror at
+  github.com/ToucanProtocol/contracts, which has no releases). Recent SDK
+  releases captured below.
+scheme: semver (beta tags)
+current_version: 1.0.6-beta
+entries:
+  - version: 1.0.6-beta
+    date: '2024-08-21'
+    breaking: false
+    highlights:
+      - Documentation fixes
+      - Downgrade isomorphic-fetch to address issue #95
+      - Add support for decentralized Subgraphs
+  - version: 0.1.6-beta
+    date: '2023-01-04'
+    breaking: false
+    highlights:
+      - Small fixes
+  - version: 0.1.5-beta
+    date: '2022-11-17'
+    breaking: false
+    highlights:
+      - Maintenance changes, dependency bumps (ethers, typescript, typechain), quality improvements

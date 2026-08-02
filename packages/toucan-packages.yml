@@ -1,0 +1,14 @@
+generated: '2026-07-21'
+method: searched
+source: https://registry.npmjs.org/toucan-sdk
+packages:
+  - language: javascript
+    registry: npm
+    name: toucan-sdk
+    url: https://www.npmjs.com/package/toucan-sdk
+    install: npm install toucan-sdk
+    official: true
+    latest: 1.0.6-beta
+    description: A JavaScript SDK for Toucan Protocol. Works in the web browser and Node.js.
+    docs: https://docs.toucan.earth/developers/sdk
+    notes: TypeScript SDK wrapping Ethers.js for Toucan smart contracts (Celo, Polygon) and subgraph queries.
