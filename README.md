@@ -64,11 +64,92 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Toucan builds digital infrastructure for carbon credit markets — the rails for buying, selling, and retiring carbon credits on-chain. Its Carbon Bridge tokenizes credits from registries like Puro Earth into TCO2 tokens, carbon pools such as CHAR (biochar) bundle credits into liquid reference tokens, and retirement certificates prove offsets on-chain. Developers build on Toucan through audited smart contracts on Base, Celo, and Polygon, the `toucan-sdk` JavaScript/TypeScript SDK, and GraphQL subgraphs served through The Graph.
+Toucan builds digital infrastructure for carbon credit markets, providing the rails for buying, selling, and retiring carbon credits on-chain. Its Carbon Bridge tokenizes credits from registries like Puro Earth into TCO2 tokens, carbon pools such as CHAR (biochar) bundle credits into liquid reference tokens, and retirement certificates prove offsets on-chain. Developers build on Toucan through audited smart contracts on Base, Celo, and Polygon, the toucan-sdk JavaScript/TypeScript SDK, and GraphQL subgraphs served through The Graph on six networks.
 
-Backed by: obvious-ventures — https://toucan.earth
+**Areas:** Company · Planetary Health · Carbon Credits · Climate · Web3 · Carbon Markets · Tokenization · GraphQL · Biochar
 
-- Docs: https://docs.toucan.earth/
-- Developers: https://docs.toucan.earth/developers/toucan-developer-resources
-- Subgraphs: https://docs.toucan.earth/developers/subgraph
-- GitHub: https://github.com/ToucanProtocol
+## Toucan on APIs.io
+
+Everything profiled for Toucan is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/toucan/](https://apis.io/providers/toucan/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Toucan Subgraph API](https://apis.io/apis/toucan/toucan-subgraph-api/) — GraphQL subgraphs providing endpoints for querying Toucan infrastructure and ecosystem data (projects, TCO2s, pools, retirements) on Base, Base Sepolia,…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Toucan Authentication](https://apis.io/security/toucan/toucan-authentication/)
+- [Toucan Domain Security](https://apis.io/security/toucan/toucan-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://toucan.earth)
+- [Documentation](https://docs.toucan.earth/)
+- [Getting started](https://docs.toucan.earth/developers/sdk/quickstart)
+- [API reference](https://docs.toucan.earth/developers/subgraph)
+- [Support](https://docs.toucan.earth/developers/support)
+- [Blog](https://blog.toucan.earth)
+- [Terms of service](https://toucan.earth/terms-of-service/)
+- [Privacy policy](https://toucan.earth/privacy-policy/)
+- [GitHub](https://github.com/ToucanProtocol)
+
+## API Evangelist rating
+
+**Kin Score 31.5** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 4.5 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 67.9 |
+| Access clarity | 27.6 |
+
+**Agent readiness 5.4** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 19.5** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/toucan/](https://apis.io/providers/toucan/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Toucan: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/toucan/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
